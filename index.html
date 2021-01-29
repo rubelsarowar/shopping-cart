@@ -81,18 +81,21 @@
    <script> 
 
 
-
+//  case plus button id use
       document.getElementById("case-plus").addEventListener("click" , function(){
          productCount(true);
          calculateTotal();
       });
 
-
+//  case minus button id use
       document.getElementById("case-minus").addEventListener("click" , function(){
          productCount(false);
          calculateTotal();
       });
       
+
+      // case product count function start here
+
       function productCount(increase){
          var caseInput = document.getElementById("case-input");
          const caseinputNumber = parseInt(caseInput.value);
@@ -107,19 +110,22 @@
          const casePrice = caseNewCount * 59;
          document.getElementById("case-price").innerHTML = "$"  + casePrice;
       }
-      
+      // case area close
+
+
+//  iphone plus button id use
       document.getElementById("iphone-plus").addEventListener("click", function(){
          iphoneCost(true);
          calculateTotal();
 
       })
 
-
+//  iphone minus button id use
       document.getElementById("iphone-minus").addEventListener("click", function(){
          iphoneCost(false);
          calculateTotal();
       })
-
+   // iphone product count function start here
       function iphoneCost(priceCalculate){
          var iphoneinput = document.getElementById("iphone-input");
          var iphoneInputNumber = parseInt(iphoneinput.value);
@@ -134,6 +140,8 @@
          document.getElementById("iphones-price").innerText = iphoneNewPrice;
  
       }
+
+      // all product total + tax + all total calculate
 
       function calculateTotal(){
          var phoneInput = document.getElementById("iphone-input");
@@ -155,6 +163,8 @@
 
       }
 
+
+      // here is second method
 
       // document.getElementById("case-plus").addEventListener("click" , function(){
       //    var caseInput = document.getElementById("case-input");
